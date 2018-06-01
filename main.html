@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+
+
+
+    <style>
+        body {
+            width: 550px;
+            margin: auto;
+            background: rgb(122, 141, 204);
+        }
+
+        h1 {
+            border-bottom: 1px solid black;
+        }
+
+        .Square {
+            height: 80px;
+            width: 80px;
+            font-size: 45pt;
+            text-align: center;
+        }
+
+        #message {
+            font-size: 18pt;
+            text-decoration: none;
+            color: black;
+        }
+
+        #restart{
+            font-size: 18pt;
+        }
+    </style>
+</head>
+
+<body onload="startGame();">
+    <h1>Tic tac toe in JS.</h1>
+    <div id="message">msg here.</div>
+
+
+    <table border="1">
+        <tr>
+            <td class="Square" id="s1" onClick="nextMove(this)"></td>
+            <td class="Square" id="s2" onClick="nextMove(this)"></td>
+            <td class="Square" id="s3" onClick="nextMove(this)"></td>
+        </tr>
+        <tr>
+            <td class="Square" id="s4" onClick="nextMove(this)"></td>
+            <td class="Square" id="s5" onClick="nextMove(this)"></td>
+            <td class="Square" id="s6" onClick="nextMove(this)"></td>
+
+        </tr>
+        <tr>
+            <td class="Square" id="s7" onClick="nextMove(this)"></td>
+            <td class="Square" id="s8" onClick="nextMove(this)"></td>
+            <td class="Square" id="s9" onClick="nextMove(this)"></td>
+        </tr>
+    </table>
+
+    <a href= "javascript : startGame();" id="restart"> Start Over.  </a>
+    <script src="main.js"></script>
+</body>
+
+</html>
